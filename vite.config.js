@@ -8,7 +8,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/examen-segundo-parcial/",
+    base: "/portafolio-vite/",
     appType: 'mpa',
     build: {
         rollupOptions: {
@@ -30,5 +30,4 @@ export default defineConfig({
         htmlPurge({}),
         ViteMinifyPlugin({}),
     ],
-    base: "portafolio-vite"
 })
