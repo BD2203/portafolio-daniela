@@ -12,21 +12,14 @@ const products = [
 
 const handlerBarsContext = {
     "/index.html": {
-        "title": "Home"
+        "title": "Home",
+        products: products,
+        testimonios: testimonios
     },
-    "/products.html": {
-        "title": "Products"
-    },
-    "/about.html": {
-        "title": "About Us"
-    },
-    "/contact.html": {
-        "title": "Contacts Us"
-    }
 }
 
 const pageContext = (page)=>{
-    const context= {...handlerBarsContext[page], products, testimonios}
+    const context= {...handlerBarsContext[page]}
     return context;
 }
 export default pageContext;
